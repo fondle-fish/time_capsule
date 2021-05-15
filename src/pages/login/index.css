@@ -31,7 +31,7 @@
     margin-top: 50px;
 }
 .weui-input {
-    width: auto;
+    width: 35vw;
     margin-left: 15px;
     background-color: rgb(255, 244, 216);
     border-radius: 15px;
@@ -49,5 +49,5 @@
     border: solid 6px black;
     border-radius: 35px;
     background-color: rgb(252, 209, 84);
-    box-shadow: rgb(117, 74, 22) 0px -6px  0px inset;
+    box-shadow: rgb(217, 151, 61) 0px -15px  0px inset;
 }
