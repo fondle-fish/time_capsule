@@ -27,7 +27,7 @@ const Fetch = (url, date={}, method = 'GET') => {
                     Taro.request({
                         url: 'http://saicem.top:5905/api/timecap/loginccnu',
                         data:{
-                            userId:id,
+                            userid:id,
                             pwd:password
                         },
                         method:'POST',
