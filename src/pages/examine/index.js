@@ -5,6 +5,7 @@ import './index.css'
 import { navigateTo } from '@tarojs/taro'
 import wh from './images/wh.png'
 import Items from './items/items'
+import Rule from '../rule/index'
 
 
 export default class examine extends Component {
@@ -23,13 +24,14 @@ export default class examine extends Component {
         return (
             <View>
                 <View className='bc'>
-                    <Image className='wh' src={wh}></Image>
+                    {/* <Image className='wh' src={wh}></Image> */}
+                    <Rule></Rule>
                     <View className='border'>
-                        <Input className='h'>我挖到的时间胶囊</Input>
+                        <Input className='h1'>我挖到的时间胶囊</Input>
                         <Items></Items>
                     </View>
                     <View className='border'>
-                        <Input className='h'>我埋下的时间胶囊</Input>
+                        <Input className='h1'>我埋下的时间胶囊</Input>
                         <Items className='items'></Items>
                     </View>
                 </View>
