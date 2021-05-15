@@ -21,10 +21,10 @@ export default class login extends Component {
                     <View className='input'>
                         <View className='h'>我是华小师</View>
                         <View className='input_text'>
-                            <View>校园卡号</View> <View><Input className='IDcard' type='text'></Input></View>
+                            <View>&nbsp;&nbsp;校园卡号</View> <View><Input className='weui-input' type='text'></Input></View>
                         </View>
                         <View className='input_text'>
-                            <View>密码</View><View><Input className='IDcard' type='password'></Input></View>
+                            <View>&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;</View><View><Input className='weui-input' type='password'></Input></View>
                         </View>
                     </View>
                 </View>

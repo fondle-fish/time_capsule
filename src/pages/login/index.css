@@ -30,9 +30,10 @@
     display: flex;
     margin-top: 50px;
 }
-.Idcard {
+.weui-input {
     margin-left: 15px;
-    background-color: rgb(10, 1, 7);
+    background-color: rgb(255, 244, 216);
+    border-radius: 15px;
 }
 .button{
     position: relative;
