@@ -3,9 +3,10 @@ export default {
     // 'pages/index/index',
     'pages/choose/index',
     'pages/login/index',
-    'pages/examine/index',
     'pages/manager/index',
-    'pages/bury/index'
+    'pages/bury/index',
+    'pages/examine/index',
+    'pages/main/index',
   ],
   window: {
     backgroundTextStyle: 'light',

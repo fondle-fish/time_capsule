@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { View } from '@tarojs/components'
 // import { AtButton } from 'taro-ui'
 import './index.css'
-import img from './images/login.png'
-import { navigateTo } from '@tarojs/taro'
+import  Taro  from '@tarojs/taro'
 
 
 export default class Index extends Component {

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { View, Image, Input, Button } from '@tarojs/components'
 //import { AtButton } from 'taro-ui'
 import './index.css'
+import { navigateTo } from '@tarojs/taro'
 
 export default class login extends Component {
     componentWillMount() { }
@@ -13,6 +14,10 @@ export default class login extends Component {
     componentDidShow() { }
 
     componentDidHide() { }
+
+    toMain= ()=>{
+        Taro.redirectTo( {url:'/pages/main/index'} )
+    }
 
     render() {
         return (
@@ -30,7 +35,7 @@ export default class login extends Component {
                     </View>
                 </View>
                 <View className='button'>
-                    <Button className='button1'>&nbsp;&nbsp;确定！</Button>
+                    <Button className='button1' onClick={this.toMain}>&nbsp;&nbsp;确定！</Button>
                 </View>
             </View>
         )

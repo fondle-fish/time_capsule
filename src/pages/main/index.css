@@ -1,0 +1,42 @@
+.bc{
+    background-image: url('./images/bc-main.png');
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.location1{
+    width: 80px;
+    height: 80px;
+    top:650px;
+    left: 500px;
+    position: absolute;
+}
+.location2{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 500px;
+    left: 600px;
+}
+.location3{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 800px;
+    left: 200px;
+}
+.tobury{ 
+    background-color: rgb(252,209,84);
+    border: solid 6px black;
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    font-size: 35px;
+    border-radius: 35px;
+    line-height: 125px;
+    text-align: center;
+    box-shadow: rgb(217, 151, 61) 0px -15px  0px inset;
+}
