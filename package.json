@@ -44,6 +44,7 @@
     "@tarojs/react": "3.0.27",
     "@tarojs/runtime": "3.0.27",
     "@tarojs/taro": "3.0.27",
+    "lottie-miniprogram": "^1.0.11",
     "react": "^16.10.0",
     "react-dom": "^16.10.0"
   },
