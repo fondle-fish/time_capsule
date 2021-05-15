@@ -9,7 +9,7 @@
     position: relative;
     height: 400px;
     width: 550px;
-    border: solid 3px black;
+    border: solid 6px black;
     border-radius: 35px;
     top: 400px;
     background-color:rgb(252, 209, 84);
@@ -31,11 +31,23 @@
     margin-top: 50px;
 }
 .weui-input {
+    width: auto;
     margin-left: 15px;
     background-color: rgb(255, 244, 216);
     border-radius: 15px;
 }
 .button{
     position: relative;
-    top: 650px;
+    margin:auto;
+    margin-top: 435px;
+    width: 300px;
+    text-align: center;
+  
+    
+}
+.button1{
+    border: solid 6px black;
+    border-radius: 35px;
+    background-color: rgb(252, 209, 84);
+    box-shadow: rgb(117, 74, 22) 0px -6px  0px inset;
 }

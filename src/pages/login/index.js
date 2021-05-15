@@ -29,7 +29,7 @@ export default class login extends Component {
                     </View>
                 </View>
                 <View className='button'>
-                    <Button >确定！</Button>
+                    <Button className='button1'>&nbsp;&nbsp;确定！</Button>
                 </View>
             </View>
         )
