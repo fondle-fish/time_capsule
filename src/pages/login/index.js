@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
-import { View, Image } from '@tarojs/components'
-// import { AtButton } from 'taro-ui'
+import { View, Image, Input, Button } from '@tarojs/components'
+//import { AtButton } from 'taro-ui'
 import './index.css'
-import img from './images/login.png'
 
-
-export default class Index extends Component {
-
+export default class login extends  Component{
     componentWillMount() { }
 
     componentDidMount() { }
@@ -20,9 +17,11 @@ export default class Index extends Component {
     render() {
         return (
             <View className='index'>
-                <View className='text'>
-                    <View className='wuli'>我是武小理</View>
-                    <View className='huashi'>我是华小师</View>
+                <View className='border'>
+                    <View className='h'>我是华小师</View>
+                </View>
+                <View className='button'>
+                    <Button >确定！</Button>
                 </View>
             </View>
         )
