@@ -1,0 +1,32 @@
+.bc{
+    background-image: url('./images/bc.png');
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.wh{
+    /* background-image: url('./images/wh.png'); */
+    position: absolute;
+    height: 40px;
+    width: 30px;
+    top: 150px;
+    left: 600px;
+}
+.border{
+    position: relative;
+    top: 300px;
+    border: solid black 6px;
+    background-color: rgb(252, 209, 84);
+    border-radius: 25px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    height: 35%;
+    box-shadow: rgb(217, 151, 61) 0px -15px  0px inset;
+}
+.h{
+    font-size: 45px;
+    font-weight: bolder;
+    position: relative;
+}
