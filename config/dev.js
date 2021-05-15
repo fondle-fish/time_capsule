@@ -5,5 +5,11 @@ module.exports = {
   defineConstants: {
   },
   mini: {},
-  h5: {}
+   h5: {
+    devServer: {
+      proxy: {
+        '/api': 'http://saicem.top:5905',
+      },
+  }
+}
 }

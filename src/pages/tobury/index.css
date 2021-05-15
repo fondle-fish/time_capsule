@@ -1,6 +1,6 @@
 .bc{
-    background-image: url('./images/bc.png');
     height: 100vh;
+    width: 100vw;
     background-size: cover;
     position: relative;
 }

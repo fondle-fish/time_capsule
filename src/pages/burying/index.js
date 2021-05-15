@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Button, View, Image } from '@tarojs/components'
 // import { AtButton } from 'taro-ui'
 import './index.css'
+import burying from './images/burying.gif'
 import bc from './images/bc-main.png'
 import lc from './images/lc.png'
 import Rule from '../rule/index'
@@ -41,7 +42,10 @@ export default class examine extends Component {
             <View className='b' >
                 <Image className='bc' src={bc}></Image>
                 <Image className='location1' onClick={this.warning} src={lc}></Image>
+                <Image className='burying1' src={burying}></Image>
+                <Image className='burying2' src={burying}></Image>
                 <Image className='location2' onClick={this.warning} src={lc}></Image>
+                <Image className='burying3' src={burying}></Image>
                 <Image className='location3' onClick={this.warning} src={lc}></Image>
                 <Rule></Rule>
                 <View onClick={this.manager} className='manager'>管理我的时间胶囊</View>

@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import { View, Image, Input, Button } from '@tarojs/components'
+import { View, Button } from '@tarojs/components'
 //import { AtButton } from 'taro-ui'
 import './index.css'
+import Taro from '@tarojs/taro'
+import { navigateto, redirectTo } from '@tarojs/taro'
 
-export default class login extends  Component{
+export default class login extends Component {
     componentWillMount() { }
 
     componentDidMount() { }
@@ -13,19 +15,26 @@ export default class login extends  Component{
     componentDidShow() { }
 
     componentDidHide() { }
+    back = () => {
+        Taro.navigateTo({ url: '/pages/main/index' })
+
+    };
 
     render() {
         return (
-            <View className='index'>
-                <View className='bottom'>
-                    <View className='text'>
-                        听说选择具有标志性的地方更有可能被挖到哦
+            <View className='wbc'>
+                <View className='warnning'>
+                    <View className='bottom'>
+                        <View className='text'>
+                            听说选择具有标志性的地方更有可能被挖到哦
                     </View>
-                    <View className='sure'>
-                        <Button>我知道啦！</Button>
+                        <View className='sure'>
+                            <Button onClick={this.back}>我知道啦！</Button>
+                        </View>
                     </View>
                 </View>
             </View>
+
         )
     }
 }

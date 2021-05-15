@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
-import { View, Image, Input, Button } from '@tarojs/components'
+import { View, } from '@tarojs/components'
 //import { AtButton } from 'taro-ui'
 import './index.css'
 import Rule from '../rule/index'
+import Taro from '@tarojs/taro'
 import { navigateTo } from '@tarojs/taro'
 
-export default class login extends  Component{
-    componentWillMount() { }
+export default class login extends Component {
+    componentWillMount() {
+
+    }
 
     componentDidMount() { }
 
@@ -16,8 +19,8 @@ export default class login extends  Component{
 
     componentDidHide() { }
 
-    toManager =()=>{
-        Taro.navigateTo({url:'/pages/manager/index'})
+    toManager = () => {
+        Taro.navigateTo({ url: '/pages/manager/index' })
     }
 
     render() {

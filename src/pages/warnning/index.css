@@ -1,4 +1,9 @@
-.index{
+.wbc{
+    background-image: url('./images/bc-main.png'); 
+    height: 100vh;
+    background-size: cover;
+}
+.warnning{
     height: 100vh;
     flex-direction: row;
 }
