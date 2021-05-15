@@ -4,13 +4,35 @@
     background-size: cover;
 }
 .border{
+    color:rgb(127,94,79);
     margin: 0 auto;
     position: relative;
     height: 400px;
     width: 550px;
     border: solid 3px black;
-    border-radius: 50px;
+    border-radius: 35px;
     top: 400px;
+    background-color:rgb(252, 209, 84);
+}
+.h{
+    text-align: center;
+}
+.input{
+    text-align: start;
+    height: 380px;
+    width: 525px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 35px;
+}
+.input_text{
+    font-size: 30px;
+    display: flex;
+    margin-top: 50px;
+}
+.Idcard {
+    margin-left: 15px;
+    background-color: rgb(10, 1, 7);
 }
 .button{
     position: relative;

@@ -37,11 +37,15 @@
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.0.27",
+    "@tarojs/plugin-platform-alipay": "^3.2.8",
+    "@tarojs/plugin-platform-swan": "^3.2.8",
+    "@tarojs/plugin-platform-tt": "^3.2.8",
+    "@tarojs/plugin-platform-weapp": "^3.2.8",
+    "@tarojs/react": "3.0.27",
     "@tarojs/runtime": "3.0.27",
     "@tarojs/taro": "3.0.27",
-    "@tarojs/react": "3.0.27",
-    "react-dom": "^16.10.0",
-    "react": "^16.10.0"
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0"
   },
   "devDependencies": {
     "@types/webpack-env": "^1.13.6",
