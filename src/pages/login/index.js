@@ -26,6 +26,7 @@ export default class login extends Component {
                         <View className='input_text'>
                             <View>&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;</View><View><Input className='weui-input' type='password'></Input></View>
                         </View>
+                        <View className='t'>密码为身份证后六位或一站式门户密码</View>
                     </View>
                 </View>
                 <View className='button'>
