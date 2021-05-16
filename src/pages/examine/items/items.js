@@ -7,21 +7,19 @@ import { navigateTo } from '@tarojs/taro'
 
 
 export default class items extends Component {
-     state={
-         context:[],
-         time:[]
-     }
+     
     toDetail = () => {
         Taro.redirectTo({
             url: '/pages/bury/index'
         })
     };
     render() {
+        const{story,time}=this.props
         return (
             <View className='index' onClick={this.toDetail}>
                 <View className=''>
-                    <View className='text'></View>
-                    <View className='time'></View>
+                    <View className='text'>{story}</View>
+                    <View className='time'>{time}</View>
                 </View>
 
             </View>

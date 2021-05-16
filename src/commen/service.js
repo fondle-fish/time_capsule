@@ -1,7 +1,7 @@
 import Taro, { connectSocket } from '@tarojs/taro'
 import getCookie from './session'
 const preHttp='http://saicem.top:5905'
-const Fetch = (url, data={}, method = 'POST') => {
+const Fetch = (url, data={}, method = 'GET') => {
     const header={
         'Access-Control-Allow-Origin': 'http://saicem.top:5905',
         'content-type':'application/json',
@@ -40,6 +40,8 @@ let service ={
     //Login
     Login_ccnu(userid, pwd) {
         return Fetch(`/api/timecap/loginccnu?userid=${userid}&pwd=${pwd}`, {
+            userid:userid,
+            pwd:pwd
             
         }, 'POST',).then(res=>{
             console.log(res);
@@ -67,7 +69,7 @@ let service ={
     add_timecap(userid,story,address){
         let Cookie=getCookie();
         console.log(Cookie)
-        return Fetch(`/api/timecap/add?userid=${userid}&story=${story}&session=${Cookie}&address=${address}`,{
+        return Fetch(`/api/timecap/add?userid=${userid}&story=${story}&address=${address}&session=${Cookie}`,{
                 
         },'POST').then(res=>{
             console.log(res);
@@ -75,12 +77,13 @@ let service ={
         });
     },
 
-    own_timcap(userid){
+    own_timecap(userid){
         let Cookie=getCookie();
         return Fetch(`/api/timecap/query/own?userid=${userid}&session=${Cookie}`,{
 
         },'POST',).then(res=>{
-
+            console.log(res);
+            return res.data
         })
 
 
