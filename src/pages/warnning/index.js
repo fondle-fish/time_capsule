@@ -16,7 +16,7 @@ export default class login extends Component {
 
     componentDidHide() { }
     back = () => {
-        Taro.navigateTo({ url: '/pages/main/index' })
+        Taro.redirectTo({ url: '/pages/main/index' })
 
     };
 

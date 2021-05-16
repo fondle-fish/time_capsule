@@ -18,7 +18,7 @@ export default class Index extends Component {
     componentDidHide() { }
 
     toLogin =()=>{
-        Taro.navigateTo({url:'/pages/login/index'})
+        Taro.redirectTo({url:'/pages/login/index'})
     }
 
     render() {

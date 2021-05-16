@@ -8,25 +8,32 @@ import Taro from '@tarojs/taro'
 import { navigateto } from '@tarojs/taro'
 
 export default class login extends Component {
-    componentWillMount() { }
-
-    componentDidMount() { }
-
-    componentWillUnmount() { }
-
-    componentDidShow() { }
-
-    componentDidHide() { }
+    constructor(props){
+        super(props)
+        this.state={
+            story:''
+        }
+    }
+    
+    changStory=(e)=>{
+        this.setState({
+            story:e.target.value
+        });
+        console.log(this.state.story)
+    }
 
     gomain = () => {
-        Taro.navigateTo({ url: '/pages/burying/index' })
+        const story = this.state.story;
+        Taro.navigateTo({ 
+            url: `/pages/burying/index?story=${story}`
+        })
     }
     render() {
         return (
             <Image src={bct} className='bc'>
                 <Rule></Rule>
                 <View className='text'>
-                    <View className='ta'><Textarea className='tac'  ></Textarea></View>
+                    <View className='ta'><Textarea className='tac' onChange={this.changStory.bind(this)} ></Textarea></View>
                 </View>
                 <Button onClick={this.gomain} className='tobury'>
                     去埋藏我的时间胶囊

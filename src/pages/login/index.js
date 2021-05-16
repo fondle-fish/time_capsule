@@ -13,11 +13,6 @@ export default class login extends Component {
             pwd: '',
         }
     }
-
-    toMain= ()=>{
-        Taro.redirectTo( {url:'/pages/main/index'} )
-    }
-
     getuserid (e){
         this.setState({
             userid:e.target.value
@@ -37,19 +32,7 @@ export default class login extends Component {
         const pwd = this.state.pwd;
         console.log(pwd,userid);
         if(userid && pwd){
-            Service.Login_ccnu(userid,pwd).then(res=>{
-                if(res.code != 0){
-                    this.alert('用户不存在或密码错误');
-                }else if(code === 0){
-                    this.alert('登录成功');
-                    //
-                    if(1){
-                        localStorage.setItem('userid',userid);
-                        localStorage.setItem('pwd',pwd);
-                    }
-                    this.toMain();
-                }
-            })
+            Service.Login_ccnu(userid,pwd)
         }
     }
 

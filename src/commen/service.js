@@ -1,6 +1,7 @@
 import Taro, { connectSocket } from '@tarojs/taro'
+import getCookie from './session'
 const preHttp='http://saicem.top:5905'
-const Fetch = (url, data={}, method = 'GET') => {
+const Fetch = (url, data={}, method = 'POST') => {
     const header={
         'Access-Control-Allow-Origin': 'http://saicem.top:5905',
         'content-type':'application/json',
@@ -39,15 +40,18 @@ let service ={
     //Login
     Login_ccnu(userid, pwd) {
         return Fetch(`/api/timecap/loginccnu?userid=${userid}&pwd=${pwd}`, {
-            userid: userid,
-            pwd: pwd
+            
         }, 'POST',).then(res=>{
             console.log(res);
             Taro.setStorage({
                 key:'Cookie',
                 data:res.data,
             });
-            Taro.navigateTo({url:'/pages/main/index'})
+            Taro.setStorage({
+                key:'userid',
+                data:userid,
+            })
+            Taro.redirectTo({url:'/pages/main/index'})
         });
       },
     
@@ -61,10 +65,25 @@ let service ={
     //     })
     // },
     add_timecap(userid,story,address){
-        return Fetch(`/api/timecap/add?userid=${userid}&story=${story}&session=${Taro.getStorage(Cookie)}&address=${address})`,{
-                userid:userid,
-                story:story,
-        },'POST',)
+        let Cookie=getCookie();
+        console.log(Cookie)
+        return Fetch(`/api/timecap/add?userid=${userid}&story=${story}&session=${Cookie}&address=${address}`,{
+                
+        },'POST').then(res=>{
+            console.log(res);
+            Taro.redirectTo({url:'/pages/main/index'})
+        });
+    },
+
+    own_timcap(userid){
+        let Cookie=getCookie();
+        return Fetch(`/api/timecap/query/own?userid=${userid}&session=${Cookie}`,{
+
+        },'POST',).then(res=>{
+
+        })
+
+
     }
 }
 

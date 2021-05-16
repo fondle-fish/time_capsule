@@ -9,7 +9,8 @@ export default {
     'pages/examine/index',
     'pages/main/index',
     'pages/tobury/index',
-    'pages/burying/index'
+    'pages/burying/index',
+    'pages/warnning/index'
   ],
   window: {
     backgroundTextStyle: 'light',

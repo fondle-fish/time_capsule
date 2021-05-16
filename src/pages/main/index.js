@@ -23,15 +23,15 @@ export default class examine extends Component {
     componentDidHide() { }
 
     toBury = () => {
-        Taro.navigateTo({ url: '/pages/tobury/index' })
+        Taro.redirectTo({ url: '/pages/tobury/index' })
     }
     warning = () => {
-        Taro.navigateTo({
+        Taro.redirectTo({
             url: '/pages/warnning/index'
         })
     };
     manager = () => {
-        Taro.navigateTo({
+        Taro.redirectTo({
             url: '/pages/examine/index'
         })
     };

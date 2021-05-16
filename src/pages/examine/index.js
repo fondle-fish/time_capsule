@@ -6,6 +6,7 @@ import { navigateTo } from '@tarojs/taro'
 import wh from './images/wh.png'
 import Items from './items/items'
 import Rule from '../rule/index'
+//import Service from '../../../commen/service'
 
 
 export default class examine extends Component {

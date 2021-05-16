@@ -20,7 +20,7 @@ export default class login extends Component {
     componentDidHide() { }
 
     toManager = () => {
-        Taro.navigateTo({ url: '/pages/manager/index' })
+        Taro.redirectTo({ url: '/pages/manager/index' })
     }
 
     render() {
