@@ -8,6 +8,7 @@
     top: -60px;
 }
 .text{
+    margin-top: 20px;
     font-size: 15px;
     overflow: scroll;
     height: 150px;
