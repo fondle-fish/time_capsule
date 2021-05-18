@@ -1,9 +1,4 @@
-.index{
-    background-image: url('./images/background.png'); 
-    height: 100vh;
-    background-size: cover;
-    flex-direction: row;
-}
+
 .manage{
     position: relative;
     right: 20px;
@@ -13,24 +8,7 @@
 .top{
     height: 20%;
 }
-.back{
-    background-image: url('./images/back.png');
-    height: 55px;
-    width: 35px;
-    background-size: 35px 55px;
-    position: absolute;
-    top:7%;
-    left: 8%;
-}
-.quesmark{
-    background-image: url('./images/quesmark.png');
-    height: 30px;
-    width: 30px;
-    background-size: cover;
-    position: absolute;
-    top:9%;
-    left: 85%;
-}
+
 
 .bottom{
     height: 60%;

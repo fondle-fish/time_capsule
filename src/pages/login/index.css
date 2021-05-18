@@ -1,18 +1,16 @@
-.index{
-    background-image: url('./images/login_withoutlogg.png'); 
-    height: 100vh;
-    background-size: cover;
-}
+
 .border{
+    position: absolute;
+    z-index: 6;
     color:rgb(127,94,79);
-    margin: 0 auto;
-    position: relative;
     height: 400px;
     width: 550px;
     border: solid 6px black;
     border-radius: 35px;
-    top: 400px;
     background-color:rgb(252, 209, 84);
+    top: 400px;
+    left: 50%;
+    margin-left: -275px;
 }
 .h{
     text-align: center;
@@ -39,7 +37,7 @@
 .button{
     position: relative;
     margin:auto;
-    margin-top: 435px;
+    margin-top: 125px;
     width: 300px;
     text-align: center;
   

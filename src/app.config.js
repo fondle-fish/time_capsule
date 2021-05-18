@@ -2,15 +2,19 @@ export default {
   pages: [
     // 'pages/index/index',
     'pages/choose/index',
+    'pages/bcg-logo/index',
     'pages/login/index',
     'pages/login_wuli/index',
+    'pages/main/index',
+    'pages/examine/index',
+    'pages/items/index',
+    'pages/bcg-map/index',
+    'pages/burying/index',
+    'pages/warnning/index',
     'pages/manager/index',
     'pages/bury/index',
-    'pages/examine/index',
-    'pages/main/index',
     'pages/tobury/index',
-    'pages/burying/index',
-    'pages/warnning/index'
+
   ],
   window: {
     backgroundTextStyle: 'light',

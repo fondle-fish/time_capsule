@@ -1,9 +1,4 @@
-.bc{
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    position: relative;
-}
+
 .text{
     border: solid 6px black;
     position: absolute;

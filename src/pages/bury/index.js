@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { View, } from '@tarojs/components'
+import Taro from '@tarojs/taro'
 //import { AtButton } from 'taro-ui'
 import './index.css'
 import Rule from '../rule/index'
-import Taro from '@tarojs/taro'
-import { navigateTo } from '@tarojs/taro'
+
 
 export default class login extends Component {
     componentWillMount() {

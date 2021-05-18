@@ -1,26 +1,33 @@
-.bc{
-    background-image: url('./images/bc.png');
-    height: 100vh;
-    background-size: cover;
-    position: relative;
-}
-.wh{
-    /* background-image: url('./images/wh.png'); */
+
+.get{
     position: absolute;
-    height: 40px;
-    width: 30px;
-    top: 150px;
-    left: 600px;
-}
-.border{
-    position: relative;
     top: 300px;
     border: solid black 6px;
     background-color: rgb(252, 209, 84);
     border-radius: 25px;
     width: 80%;
-    margin: 0 auto;
+    left: 50%;
+    margin-left: -40%;
+    text-align: center;
+    height: 35%;
+    box-shadow: rgb(217, 151, 61) 0px -15px  0px inset;
+   
+}
+.Item{
+    overflow: scroll;
+    height: 85%;
+ 
+}
+.bury{
+    position: absolute;
+    top: 900px;
+    border: solid black 6px;
+    background-color: rgb(252, 209, 84);
+    border-radius: 25px;
+    width: 80%;
     margin-top: 20px;
+    left: 50%;
+    margin-left: -40%;
     text-align: center;
     height: 35%;
     box-shadow: rgb(217, 151, 61) 0px -15px  0px inset;
@@ -28,5 +35,4 @@
 .h1{
     font-size: 35px;
     font-weight: bolder;
-    position: relative;
 }

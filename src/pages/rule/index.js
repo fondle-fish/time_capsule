@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Image, Text, Button } from '@tarojs/components'
+import { View, Image, Text } from '@tarojs/components'
 //import { AtButton } from 'taro-ui'
 import wenhao from './images/问号.png'
 import './index.css'

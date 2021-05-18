@@ -10,6 +10,7 @@
     position: absolute;
     top: 150px;
     left: 600px;
+    z-index: 999;
 }
 .role{
     background-color: rgb(252,209,84);
@@ -22,7 +23,7 @@
     border-radius: 50px;
     border: solid 6px black;
     text-align: center;
-    z-index: 99999999;
+    z-index: 999;
 }
 .h{
     font-size: 80px;
